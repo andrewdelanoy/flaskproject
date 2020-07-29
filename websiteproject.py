@@ -14,9 +14,6 @@ def blank():
 def home():
     return render_template("index.html", displayname = "Login")
 
-@app.route("/page2/")
-def page2():
-    return render_template("index.html")
 
 @app.route("/login/", methods=["POST","GET"])
 def login():
